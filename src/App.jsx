@@ -2,10 +2,11 @@ import { Route, Routes } from 'react-router-dom';
 
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
+import CoursesPage from './pages/CoursesPage';
+import CardsetPage from './pages/CardsetPage';
 
 // TODO: delete these and make each page
 function AboutPage() { return (<div>about</div>); }
-function CoursesPage() { return (<div>courses</div>); }
 function LoginPage() { return (<div>log in</div>); }
 function SignupPage() { return (<div>sign up</div>); }
 
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/courses" element={<CoursesPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route path="/courses/:id" element={<CardsetPage />} />
       </Routes>
     </div>
   );

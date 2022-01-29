@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 
-import Header from './Header';
-import HomePage from './HomePage';
+import Header from './components/Header';
+import HomePage from './pages/HomePage';
 
 // TODO: delete these and make each page
 function AboutPage() { return (<div>about</div>); }

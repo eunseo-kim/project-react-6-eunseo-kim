@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <MenuBar>
       <Title>
-        <Link to="/">Flash Cards</Link>
+        <Link to="/">Flashcards</Link>
       </Title>
       <MenuItems>
         <li><Link to="/home">home</Link></li>

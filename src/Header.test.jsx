@@ -12,7 +12,7 @@ describe('Header', () => {
       </MemoryRouter>,
     );
 
-    expect(getByText('Flash Cards')).not.toBeNull();
+    expect(getByText('Flashcards')).not.toBeNull();
   });
 
   it('renders header menus', () => {

@@ -31,7 +31,7 @@ export default function Header() {
         <Link to="/">Flashcards</Link>
       </Title>
       <MenuItems>
-        <li><Link to="/home">home</Link></li>
+        <li><Link to="/">home</Link></li>
         <li><Link to="/about">about</Link></li>
         <li><Link to="/courses">courses</Link></li>
         <li><Link to="/login">log in</Link></li>

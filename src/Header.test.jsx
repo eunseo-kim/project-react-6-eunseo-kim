@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import { MemoryRouter } from 'react-router-dom/cjs/react-router-dom.min';
+import { MemoryRouter } from 'react-router-dom';
 
 import Header from './Header';
 
@@ -22,10 +22,10 @@ describe('Header', () => {
       </MemoryRouter>,
     );
 
-    expect(getByText('home')).not.toBeNull();
-    expect(getByText('about')).not.toBeNull();
-    expect(getByText('courses')).not.toBeNull();
-    expect(getByText('log in')).not.toBeNull();
-    expect(getByText('sign up')).not.toBeNull();
+    const menus = ['home', 'about', 'courses', 'log in', 'sign up'];
+
+    menus.forEach((menu) => {
+      expect(getByText(menu)).not.toBeNull();
+    });
   });
 });

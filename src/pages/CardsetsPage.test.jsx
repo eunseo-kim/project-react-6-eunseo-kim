@@ -2,13 +2,13 @@ import { render } from '@testing-library/react';
 
 import { MemoryRouter } from 'react-router-dom';
 
-import CardsetContainer from './CardsetContainer';
+import CardsetsPage from './CardsetsPage';
 
-describe('CardsetContainer', () => {
-  it('renders Cardset Container', () => {
+describe('CardsetsPage', () => {
+  it('renders Cardsets Page', () => {
     render(
       <MemoryRouter>
-        <CardsetContainer />
+        <CardsetsPage />
       </MemoryRouter>,
     );
   });

@@ -29,11 +29,11 @@ describe('App', () => {
     });
   });
 
-  context("with path '/courses'", () => {
-    it('renders the courses page', () => {
-      const { container } = renderApp({ path: '/courses' });
+  context("with path '/cardsets'", () => {
+    it('renders the cardsets page', () => {
+      const { container } = renderApp({ path: '/cardsets' });
 
-      expect(container).toHaveTextContent('courses');
+      expect(container).toHaveTextContent('cardsets');
     });
   });
 

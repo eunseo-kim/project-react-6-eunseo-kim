@@ -2,25 +2,25 @@ import { render } from '@testing-library/react';
 
 import { MemoryRouter } from 'react-router-dom';
 
-import Courses from './Courses';
+import Cardsets from './Cardsets';
 
-describe('Courses', () => {
-  const courses = [
+describe('Cardsets', () => {
+  const cardsets = [
     { id: 1, title: 'Card Set #1' },
     { id: 2, title: 'Card Set #2' },
     { id: 3, title: 'Card Set #3' },
     { id: 4, title: 'Card Set #4' },
   ];
 
-  it('renders Courses', () => {
+  it('renders Cardsets', () => {
     const { getByText } = render(
       <MemoryRouter>
-        <Courses courses={courses} />
+        <Cardsets cardsets={cardsets} />
       </MemoryRouter>,
     );
 
-    courses.forEach((course) => {
-      expect(getByText(course.title)).not.toBeNull();
+    cardsets.forEach((cardset) => {
+      expect(getByText(cardset.title)).not.toBeNull();
     });
   });
 });

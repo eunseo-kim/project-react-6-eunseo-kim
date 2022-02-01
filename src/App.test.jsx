@@ -1,10 +1,22 @@
 import { render } from '@testing-library/react';
 
+import { useSelector } from 'react-redux';
+
 import { MemoryRouter } from 'react-router-dom';
 
 import App from './App';
 
+import cardsets from './fixtures/cardsets';
+
 describe('App', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+
+    useSelector.mockImplementation((selector) => selector({
+      cardsets,
+    }));
+  });
+
   function renderApp({ path }) {
     return render(
       <MemoryRouter initialEntries={[path]}>

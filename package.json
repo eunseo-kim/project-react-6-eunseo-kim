@@ -9,7 +9,10 @@
     "coverage": "npm run test:unit -- --coverage",
     "test:e2e": "codeceptjs run --steps",
     "test": "npm run coverage && start-server-and-test start http://localhost:8080 test:e2e",
-    "lint": "eslint --ext js,jsx ."
+    "lint": "eslint --ext js,jsx .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "webpack build"
   },
   "keywords": [],
   "author": "",
@@ -44,11 +47,13 @@
     "@emotion/core": "^11.0.0",
     "@emotion/styled": "^11.6.0",
     "@reduxjs/toolkit": "^1.7.1",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1",
     "redux": "^4.1.2",
     "redux-thunk": "^2.3.0"
-  }
+  },
+  "homepage": "https://codesoom.github.io/project-react-6-eunseo-kim/"
 }

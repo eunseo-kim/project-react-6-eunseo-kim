@@ -17,7 +17,7 @@ import store from './store';
 ReactDOM.render(
   (
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Global styles={global} />
         <App />
       </BrowserRouter>

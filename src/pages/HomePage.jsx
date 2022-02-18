@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+
 import { Link } from 'react-router-dom';
 
 const Container = styled.div({
@@ -50,7 +51,7 @@ export default function HomePage() {
           <Link to="/cardsets">Start Now!</Link>
         </Button>
       </Description>
-      <Image src="./src/img/done.svg" alt="" />
+      <Image src="/src/img/done.svg" alt="" />
     </Container>
   );
 }

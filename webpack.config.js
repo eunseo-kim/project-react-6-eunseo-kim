@@ -3,10 +3,10 @@ const webpack = require('webpack');
 const dotenv = require('dotenv');
 const HTMLWeebPackPlugin = require('html-webpack-plugin');
 
-if (process.env.NODE_ENV === 'production') {
-  dotenv.config({ path: path.resolve(__dirname, '.env.production') });
-} else {
+if (process.env.NODE_ENV === 'development') {
   dotenv.config({ path: path.resolve(__dirname, '.env.development') });
+} else {
+  dotenv.config({ path: path.resolve(__dirname, '.env.production') });
 }
 
 module.exports = {

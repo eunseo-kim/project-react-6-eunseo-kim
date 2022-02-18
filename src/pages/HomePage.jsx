@@ -2,6 +2,8 @@ import styled from '@emotion/styled';
 
 import { Link } from 'react-router-dom';
 
+import img from '../img/done.svg';
+
 const Container = styled.div({
   width: '100vw',
   height: '100vh',
@@ -51,7 +53,7 @@ export default function HomePage() {
           <Link to="/cardsets">Start Now!</Link>
         </Button>
       </Description>
-      <Image src="/src/img/done.svg" alt="" />
+      <Image src={img} alt="" />
     </Container>
   );
 }

@@ -12,4 +12,7 @@ module.exports = {
       statements: 100,
     },
   },
+  moduleNameMapper: {
+    '^.+\\.svg$': 'jest-svg-transformer',
+  },
 };
